@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmsv_gamediag", "gmsv_gamediag.vcxproj", "{521DFE21-04B5-774A-92D5-0EF17E50AEDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{521DFE21-04B5-774A-92D5-0EF17E50AEDC}.Release|Win32.ActiveCfg = Release|Win32
+		{521DFE21-04B5-774A-92D5-0EF17E50AEDC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {132CB12C-DA70-43D0-BDD5-4D05A30A2AD9}
+	EndGlobalSection
+EndGlobal
