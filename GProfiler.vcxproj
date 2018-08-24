@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{2D8FB2B4-F2F5-471D-A8D7-00D484606E76}</ProjectGuid>
+    <RootNamespace>GProfiler</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.ctg</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetExt>.ctg</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\libs\boost_1_67_0;..\gstdlib\src;..\hl2sdk\game\client\hl2;..\hl2sdk\vstdlib;..\hl2sdk\vpc_scripts;..\hl2sdk\vgui2;..\hl2sdk\utils;..\hl2sdk\tier1;..\hl2sdk\tier0;..\hl2sdk\raytrace;..\hl2sdk\mathlib;..\hl2sdk\materialsystem;..\hl2sdk\lib;..\hl2sdk\gcsdk;..\hl2sdk\game\shared;..\hl2sdk\game\server;..\hl2sdk\game\client;..\hl2sdk\game;..\hl2sdk\fgdlib;..\hl2sdk\dx9sdk;..\hl2sdk\dx10sdk;..\hl2sdk\devtools;..\hl2sdk\public\engine;..\hl2sdk\public\fgdlib;..\hl2sdk\public\filesystem;..\hl2sdk\public\Friends;..\hl2sdk\public\g15;..\hl2sdk\public\game;..\hl2sdk\public\haptics;..\hl2sdk\public\inputsystem;..\hl2sdk\public\jpeglib;..\hl2sdk\public\keyframe;..\hl2sdk\public\materialsystem;..\hl2sdk\public\mathlib;..\hl2sdk\public\matsys_controls;..\hl2sdk\public\maya;..\hl2sdk\public\mdllib;..\hl2sdk\public\p4lib;..\hl2sdk\public\particles;..\hl2sdk\public\phonemeextractor;..\hl2sdk\public\scenefilecache;..\hl2sdk\public\shaderapi;..\hl2sdk\public\shaderlib;..\hl2sdk\public\SoundEmitterSystem;..\hl2sdk\public\soundsystem;..\hl2sdk\public\sourcevr;..\hl2sdk\public\steam;..\hl2sdk\public\tier0;..\hl2sdk\public\tier1;..\hl2sdk\public\tier2;..\hl2sdk\public\tier3;..\hl2sdk\public\togl;..\hl2sdk\public\toolframework;..\hl2sdk\public\tools;..\hl2sdk\public\unicode;..\hl2sdk\public\unitlib;..\hl2sdk\public\vgui_controls;..\hl2sdk\public\vaudio;..\hl2sdk\public\vgui;..\hl2sdk\public\VGuiMatSurface;..\hl2sdk\public\video;..\hl2sdk\public\vphysics;..\hl2sdk\public\vstdlib;..\hl2sdk\public\vtf;..\hl2sdk\public\zip;..\hl2sdk\public\datamodel;..\hl2sdk\public\datacache;..\hl2sdk\public\bitmap;..\hl2sdk\public\avi;..\hl2sdk\public\appframework;..\hl2sdk\public;..\hl2sdk\common;..\hl2sdk;..\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\libs\boost_1_67_0\lib32-msvc-14.1;../hl2sdk/lib/public;../gstdlib/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;gstdlib.lib;legacy_stdio_definitions.lib;tier0.lib;tier1.lib;tier2.lib;tier3.lib;bitmap.lib;choreoobjects.lib;dmxloader.lib;mathlib.lib;matsys_controls.lib;nvtristrip.lib;particles.lib;raytrace.lib;steam_api.lib;vgui_controls.lib;vmpi.lib;vstdlib.lib;vtf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\libs\boost_1_67_0;..\gstdlib\src;..\hl2sdk\game\client\hl2;..\hl2sdk\vstdlib;..\hl2sdk\vpc_scripts;..\hl2sdk\vgui2;..\hl2sdk\utils;..\hl2sdk\tier1;..\hl2sdk\tier0;..\hl2sdk\raytrace;..\hl2sdk\mathlib;..\hl2sdk\materialsystem;..\hl2sdk\lib;..\hl2sdk\gcsdk;..\hl2sdk\game\shared;..\hl2sdk\game\server;..\hl2sdk\game\client;..\hl2sdk\game;..\hl2sdk\fgdlib;..\hl2sdk\dx9sdk;..\hl2sdk\dx10sdk;..\hl2sdk\devtools;..\hl2sdk\public\engine;..\hl2sdk\public\fgdlib;..\hl2sdk\public\filesystem;..\hl2sdk\public\Friends;..\hl2sdk\public\g15;..\hl2sdk\public\game;..\hl2sdk\public\haptics;..\hl2sdk\public\inputsystem;..\hl2sdk\public\jpeglib;..\hl2sdk\public\keyframe;..\hl2sdk\public\materialsystem;..\hl2sdk\public\mathlib;..\hl2sdk\public\matsys_controls;..\hl2sdk\public\maya;..\hl2sdk\public\mdllib;..\hl2sdk\public\p4lib;..\hl2sdk\public\particles;..\hl2sdk\public\phonemeextractor;..\hl2sdk\public\scenefilecache;..\hl2sdk\public\shaderapi;..\hl2sdk\public\shaderlib;..\hl2sdk\public\SoundEmitterSystem;..\hl2sdk\public\soundsystem;..\hl2sdk\public\sourcevr;..\hl2sdk\public\steam;..\hl2sdk\public\tier0;..\hl2sdk\public\tier1;..\hl2sdk\public\tier2;..\hl2sdk\public\tier3;..\hl2sdk\public\togl;..\hl2sdk\public\toolframework;..\hl2sdk\public\tools;..\hl2sdk\public\unicode;..\hl2sdk\public\unitlib;..\hl2sdk\public\vgui_controls;..\hl2sdk\public\vaudio;..\hl2sdk\public\vgui;..\hl2sdk\public\VGuiMatSurface;..\hl2sdk\public\video;..\hl2sdk\public\vphysics;..\hl2sdk\public\vstdlib;..\hl2sdk\public\vtf;..\hl2sdk\public\zip;..\hl2sdk\public\datamodel;..\hl2sdk\public\datacache;..\hl2sdk\public\bitmap;..\hl2sdk\public\avi;..\hl2sdk\public\appframework;..\hl2sdk\public;..\hl2sdk\common;..\hl2sdk;..\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\libs\boost_1_67_0\lib32-msvc-14.1;../hl2sdk/lib/public;../gstdlib/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;gstdlib.lib;legacy_stdio_definitions.lib;tier0.lib;tier1.lib;tier2.lib;tier3.lib;bitmap.lib;choreoobjects.lib;dmxloader.lib;mathlib.lib;matsys_controls.lib;nvtristrip.lib;particles.lib;raytrace.lib;steam_api.lib;vgui_controls.lib;vmpi.lib;vstdlib.lib;vtf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Cartridge.cpp" />
+    <ClCompile Include="Profiler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="buffer.h" />
+    <ClInclude Include="Profiler.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
